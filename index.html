@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="O ConvertMoney é um conversor de câmbio confiável e fácil de usar. Converta moedas de forma rápida e precisa." />
+    <meta name="keywords" content="conversor de câmbio, câmbio, moedas, conversão de moedas, taxa de câmbio, conversão rápida" />
+    <meta name="author" content="Leonardo Oliveira" />
+    <meta name="robots" content="index, follow" />
+
+    <title>ConvertMoney</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="image/$$.png" type="image/x-icon" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet" />
+
+  </head>
+  <body>
+    <header>
+      <h1>Bem vindo ao <span>ConvertMoney</span></h1>
+      <p>Seu conversor de câmbio mais confiável!</p>
+    </header>
+    <div class="container">
+      <div class="form-group1">
+        <div class="cambio">
+          <label for="fromCurrency">Escolha o câmbio:</label>
+          <select id="fromCurrency"></select>
+        </div>
+        <div class="valor">
+          <label for="amount">Digite o valor desejado:</label>
+          <input type="number" id="amount" placeholder="Digite o valor" />
+        </div>
+
+        <button id="convert">Converter</button>
+      </div>
+      <div class="form-group2">
+        <div class="cambio">
+          <label for="toCurrency">Escolha o câmbio:</label>
+          <select id="toCurrency"></select>
+        </div>
+
+        <div id="result" class="result"></div>
+      </div>
+    </div>
+
+    <script src="script.

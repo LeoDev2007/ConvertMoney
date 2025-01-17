@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", serif;
+}
+
+header{
+    text-align: center;
+    padding: 7.5px;
+
+}
+
+header p{
+    margin-top: 10px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.form-group1{
+    height: calc(100vh - 85px);
+    width: 50%;
+    background-color: #Efbf04;
+    border-right: 3px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group1 button{
+    background-color: #000;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form-group1 button:hover{
+    background-color: #Efbf04;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+
+.cambio{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.cambio select{
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    background: transparent;
+    cursor: pointer;
+    max-width: 50%;
+}
+
+.valor{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.valor input{
+    margin-top: 15px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-bottom: 2px solid #000;
+}
+
+.valor input::placeholder{
+    color: #000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-group2{
+    width: 50%;
+    height: calc(100vh - 85px);
+    background-color: #008000;
+    border-left: 3px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.form-group2 select{
+    color: #fff;
+}
+
+.form-group2 select option{
+    color: #000;
+}
+.result{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 428px) {
+    header h1{
+        font-size: 20px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .form-group1{
+        height: 50vh;
+        width: 100%;
+        border-right: none;
+    }
+
+    .form-group2{
+        height: 50vh;
+        width: 100%;
+        border-left: none;
+    }
+
+    .cambio select{
+        font-size: 20px;
+    }
+
+    .cambio select option{
+        font-size: 13px;
+    }
+
+    .form-group1 button{
+        background-color: #000;
+        outline: none;
+        padding: 15px;
+        color: #fff;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: .3s;
+    }
+}
